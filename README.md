@@ -71,6 +71,60 @@ This Movie Recommendation System is a Python-based application that suggests mov
 
 6. **Display**: The top 10 recommended movies are displayed in the GUI.
 
+# TASK 3
+
+# Image Captioning App
+
+## Description
+
+This Image Captioning App is a simple GUI application that allows users to upload an image and receive an automatically generated caption. The app uses the Hugging Face API with the `nlpconnect/vit-gpt2-image-captioning` model to generate accurate and descriptive captions for a wide variety of images.
+
+## Features
+
+- User-friendly GUI built with tkinter
+- Easy image upload functionality
+- Displays the uploaded image
+- Generates and displays a caption for the uploaded image
+- Utilizes a state-of-the-art image captioning model
+
+## Requirements
+
+- Python 3.6+
+- PIL (Pillow)
+- requests
+- python-dotenv
+- tkinter (usually comes pre-installed with Python)
+
+## Installation
+
+1. Clone this repository or download the source code.
+2. Install the required packages:
+   ```
+   pip install Pillow requests python-dotenv
+   ```
+3. Create a `.env` file in the project directory and add your Hugging Face API key:
+   ```
+   HUGGINGFACE_API_KEY=your_api_key_here
+   ```
+
+## Usage
+
+1. Run the script:
+   ```
+   python image_captioning.py
+   ```
+2. Click the "Upload Image" button in the GUI.
+3. Select an image file from your computer.
+4. Wait for the caption to be generated and displayed.
+
+## How it Works
+
+The app sends the uploaded image to the Hugging Face API, which uses a Vision Transformer (ViT) to encode the image and GPT-2 to generate a descriptive caption. The result is then displayed in the GUI.
+
+## Note
+
+Make sure to keep your `.env` file secure and do not share it publicly, as it contains your API key.
+
 
 
 
