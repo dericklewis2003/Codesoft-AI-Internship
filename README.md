@@ -126,6 +126,46 @@ The app sends the uploaded image to the Hugging Face API, which uses a Vision Tr
 Make sure to keep your `.env` file secure and do not share it publicly, as it contains your API key.
 
 
+# Task 4
+
+# AI Chatbot with GUI
+
+## Project Description
+
+This project implements an AI-powered chatbot with a graphical user interface (GUI) using Python. The chatbot combines rule-based responses with AI-generated answers from a pre-trained language model, providing a versatile and engaging conversational experience.
+
+### Key Features
+
+- **Hybrid Response System**: Utilizes both predefined rules and AI-generated responses.
+- **GUI Interface**: Built with Tkinter for a user-friendly chat experience.
+- **API Integration**: Connects to Hugging Face's API to access advanced language models.
+- **Customizable Responses**: Easily extendable rule-based system for common queries.
+- **Error Handling**: Robust error management for API calls and unexpected inputs.
+
+### Technologies Used
+
+- **Python**: Core programming language
+- **Tkinter**: GUI framework
+- **Hugging Face Transformers**: AI model API
+- **Requests**: HTTP library for API calls
+- **Regular Expressions**: For pattern matching in rule-based responses
+
+## Setup and Installation
+
+1. Clone the repository
+2. Install required packages:
+   ```
+   pip install requests python-dotenv tk
+   ```
+3. Set up a `.env` file with your Hugging Face API key:
+   ```
+   HUGGINGFACE_API_KEY=your_api_key_here
+   ```
+4. Run the script:
+   ```
+   python chatbot.py
+   ```
+
 
 
 
